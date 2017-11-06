@@ -10,6 +10,7 @@ class GraqhqlRenderer extends React.Component {
     variables: PropTypes.any,
     headers: PropTypes.any,
     children: PropTypes.func,
+    onError: PropTypes.func,
   };
 
   static defaultProps = {
@@ -65,6 +66,9 @@ class GraqhqlRenderer extends React.Component {
       .catch(error => {
         if (this.willUnmount) {
           return;
+        }
+        if (props.onError) {
+          props.onError(error);
         }
         this.setState({
           isFetching: false,
