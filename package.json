@@ -1,6 +1,6 @@
 {
   "name": "graphql-query-renderer",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "A minimalistic container for rendering GraphQL data in React.",
   "repository": "https://tutturen@github.com/tutturen/graphql-query-renderer.git",
   "author": "Thor Even Tutturen <thor@bustbyte.no>",
