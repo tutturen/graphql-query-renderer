@@ -1,0 +1,29 @@
+{
+  "name": "graphql-query-renderer",
+  "version": "1.0.0",
+  "description":
+    "A minimalistic container for rendering GraphQL data in React.",
+  "repository":
+    "https://tutturen@github.com/tutturen/graphql-query-renderer.git",
+  "author": "Thor Even Tutturen <thor@bustbyte.no>",
+  "license": "MIT",
+  "scripts": {
+    "build": "mkdir -p dist && rimraf dist && babel -d dist src"
+  },
+  "main": "dist/index.js",
+  "keywords": ["react", "graphql", "fetch", "renderer", "container"],
+  "dependencies": {
+    "graphql-request": "^1.4.0",
+    "prop-types": "^15.6.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "rimraf": "^2.6.2"
+  },
+  "peerDependencies": {
+    "react": "^16.0.0"
+  }
+}
