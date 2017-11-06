@@ -1,4 +1,9 @@
-# graphql-query-renderer
+<p align="center">
+![image](logo.svg)
+</p>
+
+
+
 A minimalistic container for rendering GraphQL data in React.
 
 ## Installation
