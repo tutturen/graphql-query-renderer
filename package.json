@@ -8,7 +8,9 @@
   "author": "Thor Even Tutturen <thor@bustbyte.no>",
   "license": "MIT",
   "scripts": {
-    "build": "mkdir -p dist && rimraf dist && babel -d dist src"
+    "build": "mkdir -p dist && rimraf dist && babel -d dist src",
+    "bump:patch": "npm version patch -m \"v%s\"",
+    "bump:minor": "npm version minor -m \"v%s\""
   },
   "main": "dist/index.js",
   "keywords": ["react", "graphql", "fetch", "renderer", "container"],

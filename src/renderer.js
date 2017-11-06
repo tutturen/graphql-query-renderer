@@ -44,8 +44,11 @@ class GraqhqlRenderer extends React.Component {
   dispatch = (props = this.props) => {
     this.setState({ isFetching: true, error: null });
 
+    const headers =
+      typeof props.headers === 'function' ? props.headers() : props.headers;
+
     const client = new GraphQLClient(props.endpoint, {
-      headers: props.headers,
+      headers,
     });
 
     return client
